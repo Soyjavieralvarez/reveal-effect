@@ -17,3 +17,48 @@ h1 {
     transform: translateY(115px);
     transition: transform .5s
 }
+
+@media (max-width: 768px) {
+    header {
+      height: 100vh;
+      padding: 20px;
+      text-align: center;
+    }
+  
+    h1 {
+        border: solid 2px red;
+        width: auto;
+        height: auto;
+      font-size: 3rem;
+      line-height: 4rem;
+      clip-path: none; /* Elimina la propiedad clip-path */
+    }
+  
+    .char {
+      transform: translateY(0);
+      transition: transform 0.5s;
+    }
+  }
+  
+  /* Estilos para pantallas más grandes (por ejemplo, escritorios) */
+  /* Puedes ajustar los valores de max-width según tus necesidades */
+  @media (min-width: 769px) {
+    header {
+      display: grid;
+      place-content: center;
+      height: 100vh;
+    }
+  
+    h1 {
+      font-size: 7rem;
+      text-transform: uppercase;
+      font-family: 'Bebas Neue';
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      line-height: 5.9rem;
+    }
+  
+    .char {
+      transform: translateY(115px);
+      transition: transform 0.5s;
+    }
+  }
