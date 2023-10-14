@@ -26,16 +26,13 @@ h1 {
     }
   
     h1 {
-        border: solid 2px red;
-        width: auto;
-        height: auto;
       font-size: 3rem;
       line-height: 4rem;
-      clip-path: none; /* Elimina la propiedad clip-path */
+      
     }
   
     .char {
-      transform: translateY(0);
+      transform: translateY(-115);
       transition: transform 0.5s;
     }
   }
